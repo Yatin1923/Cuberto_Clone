@@ -10,10 +10,10 @@ export default class Magnetic {
     constructor(el, options = {}) {
         this.el = $(el);
         this.options = $.extend(true, {
-            y: 0.2,
-            x: 0.2,
-            s: 0.2,
-            rs: 0.7
+            y: 0.4,
+            x: 0.4,
+            s: 0.4,
+            rs: 1.0
         }, this.el.data('magnetic') || options);
 
         this.y = 0;
@@ -47,13 +47,24 @@ export default class Magnetic {
         });
     }
 
+    // move(x, y, speed) {
+    //     gsap.to(this.el, {
+    //         y: y,
+    //         x: x,
+    //         force3D: true,
+    //         overwrite: true,
+    //         duration: speed
+    //     });
+    // }
     move(x, y, speed) {
         gsap.to(this.el, {
             y: y,
             x: x,
             force3D: true,
             overwrite: true,
-            duration: speed
+            duration: 1.5,
+            ease: "elastic.out(1,0.25)", // You can adjust the easing function as needed
         });
     }
+    
 }

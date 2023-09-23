@@ -78,14 +78,16 @@ html, body{
     width: 10vw;
     height: 10vh;
 }
-.menu{
+.menuIcon{
+    width: 5vw;
+    justify-content: center;
     display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 20px;
     height: 10vh;
-    width: 7vw;
+    /* text-align: center; */
+    vertical-align: revert;
+    align-items: center;
 }
+
 #homemain{
     width: 100%;
     padding: 15vw 13vw;

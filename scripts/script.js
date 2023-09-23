@@ -1,4 +1,4 @@
-import Magnetic from "./magnetic";
+import Magnetic from "./magneticCursor.js";
 
 var cursor = new MouseFollower();
 // Skew effect

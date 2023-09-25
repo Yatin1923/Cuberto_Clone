@@ -176,9 +176,9 @@ overflow: hidden;
     justify-content: flex-end;
     width: 45%;
     height: inherit;
-    background-color: blue;
 }
 .fright .images{
+    overflow: hidden;
     width: 90%;
     height: 90%;
 }
@@ -187,6 +187,7 @@ overflow: hidden;
     height: 100%;
     object-fit: cover;
 }
+
 .btn{
     margin-top: 5vh;
     display: flex;

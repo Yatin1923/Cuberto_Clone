@@ -12,3 +12,30 @@ skew.addEventListener('mouseleave', () => {
 });
 
 $('[data-magnetic]').each(function () {new Magnetic(this);});
+
+gsap.to(".fleftelm",{
+    scrollTrigger:{
+        trigger:"#fimages",
+        pin:".img1,#fimages",
+        start: "top top",
+        end:"bottom bottom",
+        endTrigger:".last",
+        scrub:0.5
+        },
+    y:"-300%",
+    ease:Power1
+});
+
+  gsap.to(".img1",{
+    scrollTrigger:{
+        trigger:"#fimages",
+        start: "top top",
+        end:"bottom bottom",
+        endTrigger:".last",
+        scrub:0.5
+        },
+    y: "-300%",
+    ease:Power1
+  });
+
+  
